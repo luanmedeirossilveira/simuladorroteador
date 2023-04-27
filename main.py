@@ -21,7 +21,7 @@ def gerar_pacotes():
   for interface in interfaces:
     origem = f"192.168.{random.randint(1, 255)}.{random.randint(1, 255)}"
     destino = f"10.0.{random.randint(1, 255)}.{random.randint(1, 255)}"
-    ttl = random.randint(1, 10)
+    ttl = random.randint(1, 10) 
     tos = random.randint(0, 255)
 
     pacote = PacoteIP(origem, destino, ttl, tos)
